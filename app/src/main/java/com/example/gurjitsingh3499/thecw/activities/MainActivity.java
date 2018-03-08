@@ -1,4 +1,4 @@
-package com.example.gurjitsingh3499.thecw;
+package com.example.gurjitsingh3499.thecw.activities;
 
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
@@ -15,6 +15,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.example.gurjitsingh3499.thecw.R;
 import com.example.gurjitsingh3499.thecw.fragments.FirstFragment;
 import com.example.gurjitsingh3499.thecw.fragments.SecondFragment;
 import com.example.gurjitsingh3499.thecw.fragments.ThirdFragment;
