@@ -3,12 +3,15 @@ package com.example.gurjitsingh3499.thecw.fragments;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.gurjitsingh3499.thecw.R;
+import com.example.gurjitsingh3499.thecw.adapters.ContentAdapter;
+import com.example.gurjitsingh3499.thecw.services.DataService;
 
 
 /**
@@ -67,7 +70,12 @@ public class FirstFragment extends Fragment {
         RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.recycler);
         recyclerView.setHasFixedSize(true);
 
+        ContentAdapter adapter = new ContentAdapter(DataService.getInstance().getContent());
+        recyclerView.setAdapter(adapter);
 
+        LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
+        layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
+        recyclerView.setLayoutManager(layoutManager);
 
         return view;
     }
