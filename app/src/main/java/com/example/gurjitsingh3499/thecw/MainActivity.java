@@ -15,6 +15,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.example.gurjitsingh3499.thecw.fragments.FirstFragment;
+import com.example.gurjitsingh3499.thecw.fragments.SecondFragment;
+import com.example.gurjitsingh3499.thecw.fragments.ThirdFragment;
+
 public class MainActivity extends AppCompatActivity {
 
     /**
@@ -51,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
 
         mViewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
         tabLayout.addOnTabSelectedListener(new TabLayout.ViewPagerOnTabSelectedListener(mViewPager));
-        
+
     }
 
 
