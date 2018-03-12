@@ -18,11 +18,11 @@ public class DataService {
     private DataService() {
     }
 
-    public ArrayList<Content> getContent(){
+    public ArrayList<Content> getContent(){ //mimic an internet database
         ArrayList<Content> list = new ArrayList<>();
-        list.add(new Content("Title","ic_movie_black_48dp","Episode Title", "Date"));
-        list.add(new Content("Title","ic_movie_black_48dp","Episode Title", "Date"));
-        list.add(new Content("Title","ic_movie_black_48dp","Episode Title", "Date"));
+        list.add(new Content("The Flash","flash","The Reverse", "01/01/2018"));
+        list.add(new Content("Supergirl","superman","General Zod", "01/01/2018"));
+        list.add(new Content("Arrow","arrow","Felicity and Friends", "01/01/2018"));
         return list;
     }
 }
